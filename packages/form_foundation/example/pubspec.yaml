@@ -1,0 +1,21 @@
+name: form_foundation_example
+description: "Minimal integration example of form_foundation."
+publish_to: "none"
+resolution: workspace
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  form_foundation: ^0.1.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

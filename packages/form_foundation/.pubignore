@@ -1,0 +1,10 @@
+# The example ships only its Dart sources and pubspec: pub.dev renders
+# example/lib/main.dart on the Example tab; the platform scaffolding is
+# regenerable with `flutter create .`.
+example/android/
+example/ios/
+example/linux/
+example/macos/
+example/web/
+example/windows/
+example/build/

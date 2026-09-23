@@ -1,0 +1,14 @@
+analyzer:
+  exclude:
+    - lib/src/l10n/generated/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
+include: ../../analysis_options.yaml
+
+linter:
+  rules:
+    public_member_api_docs: true

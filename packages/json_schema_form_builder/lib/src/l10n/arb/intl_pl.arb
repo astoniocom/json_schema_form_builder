@@ -1,0 +1,49 @@
+{
+  "@@locale": "pl",
+
+  "resetValueTooltip": "Zresetuj wartość",
+  "setNullTooltip": "Ustaw null",
+  "valueNotSetLabel": "Nie ustawiono",
+
+  "valueAbsentLabel": "brak wartości",
+
+  "enumNullOptionLabel": "Brak wartości",
+  "enumNotSelectedLabel": "Nie wybrano",
+  "selectOptionLabel": "Wybierz opcję",
+  "variantLabel": "Opcja {number}",
+
+  "childrenHaveErrorsLabel": "Zawiera błędy w polach podrzędnych",
+  "listFallbackTitle": "Lista",
+  "objectFallbackTitle": "Obiekt",
+  "itemsSummary": "{count, plural, one{1 element} few{{count} elementy} many{{count} elementów} other{{count} elementu}}",
+  "valueFallbackLabel": "Wartość",
+
+  "editDialogTitle": "Edycja {fieldTitle}",
+  "addItemDialogTitle": "Dodaj element",
+  "addEntryDialogTitle": "Dodaj właściwość",
+  "editEntryDialogTitle": "Edytuj właściwość",
+  "keyFieldLabel": "Klucz",
+  "valueTypeLabel": "Typ wartości",
+  "keyEmptyError": "Klucz nie może być pusty",
+  "keyExistsError": "Klucz już istnieje",
+  "additionalPropertiesForbiddenError": "Właściwość \"{key}\" nie jest zdefiniowana w schemacie, a dodatkowe właściwości są zabronione",
+
+  "invalidJsonError": "Nieprawidłowy format JSON",
+  "notAllowedByEnumError": "Wartość niedozwolona przez enum",
+
+  "noFileSelectedHint": "Nie wybrano pliku",
+
+  "typeNameString": "String",
+  "typeNameInt": "Int",
+  "typeNameDouble": "Double",
+  "typeNameBool": "Bool",
+  "typeNameArray": "Array",
+  "typeNameObject": "Object",
+  "typeNameNull": "Null",
+  "typeNameEnum": "Enum",
+  "typeNameRaw": "Raw",
+  "typeNameUnknown": "Unknown",
+
+  "expandCycleButtonLabel": "Rozwiń cykl",
+  "cycleFieldHelperText": "Odwołanie rekurencyjne"
+}

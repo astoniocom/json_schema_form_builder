@@ -1,0 +1,172 @@
+{
+  "@@locale": "en",
+
+  "resetValueTooltip": "Reset value",
+  "@resetValueTooltip": {
+    "description": "Tooltip of the null-field button clearing an explicit null (the key is removed from the document)."
+  },
+  "setNullTooltip": "Set to null",
+  "@setNullTooltip": {
+    "description": "Tooltip of the null-field button writing an explicit JSON null."
+  },
+  "valueNotSetLabel": "Not set",
+  "@valueNotSetLabel": {
+    "description": "Shown by the null field when the key is absent from the document."
+  },
+
+  "valueAbsentLabel": "no value",
+  "@valueAbsentLabel": {
+    "description": "Shown by the unknown-type field for an absent value."
+  },
+
+  "enumNullOptionLabel": "No value",
+  "@enumNullOptionLabel": {
+    "description": "Label of an enum option whose value is JSON null."
+  },
+  "enumNotSelectedLabel": "Not selected",
+  "@enumNotSelectedLabel": {
+    "description": "Shown by the enum field when the key is absent from the document."
+  },
+  "selectOptionLabel": "Select an option",
+  "@selectOptionLabel": {
+    "description": "Fallback field label of an enum without a title, and the hint of the variant (anyOf/oneOf) switcher when nothing is selected."
+  },
+  "variantLabel": "Option {number}",
+  "@variantLabel": {
+    "description": "Label of an untitled variant (anyOf/oneOf) alternative; the number is 1-based.",
+    "placeholders": {
+      "number": {"type": "int"}
+    }
+  },
+
+  "childrenHaveErrorsLabel": "Contains errors in child fields",
+  "@childrenHaveErrorsLabel": {
+    "description": "Shown on a collapsed container whose children failed validation (the child errors themselves are visible only inside the editor)."
+  },
+  "listFallbackTitle": "List",
+  "@listFallbackTitle": {
+    "description": "Fallback title of an untitled array field."
+  },
+  "objectFallbackTitle": "Object",
+  "@objectFallbackTitle": {
+    "description": "Fallback title of an untitled object field."
+  },
+  "itemsSummary": "{count, plural, =1{1 item} other{{count} items}}",
+  "@itemsSummary": {
+    "description": "Collapsed-array summary prefix, e.g. '3 items'.",
+    "placeholders": {
+      "count": {"type": "num"}
+    }
+  },
+  "valueFallbackLabel": "Value",
+  "@valueFallbackLabel": {
+    "description": "Fallback label of an untitled raw JSON field."
+  },
+
+  "editDialogTitle": "Edit {fieldTitle}",
+  "@editDialogTitle": {
+    "description": "Title of the field editor dialog; fieldTitle is the field's title.",
+    "placeholders": {
+      "fieldTitle": {"type": "String"}
+    }
+  },
+  "addItemDialogTitle": "Add item",
+  "@addItemDialogTitle": {
+    "description": "Title of the dialog entering a new array item."
+  },
+  "addEntryDialogTitle": "Add entry",
+  "@addEntryDialogTitle": {
+    "description": "Title of the dialog adding an object property."
+  },
+  "editEntryDialogTitle": "Edit entry",
+  "@editEntryDialogTitle": {
+    "description": "Title of the dialog editing an existing object property."
+  },
+  "keyFieldLabel": "Key",
+  "@keyFieldLabel": {
+    "description": "Label of the property-name input in the entry dialog."
+  },
+  "valueTypeLabel": "Value type",
+  "@valueTypeLabel": {
+    "description": "Label of the type selector in the entry dialog."
+  },
+  "keyEmptyError": "Key cannot be empty",
+  "@keyEmptyError": {
+    "description": "Entry dialog: the property name is empty."
+  },
+  "keyExistsError": "Key already exists",
+  "@keyExistsError": {
+    "description": "Entry dialog: the property name is already present in the object."
+  },
+  "additionalPropertiesForbiddenError": "Property \"{key}\" is not defined in schema and additional properties are forbidden",
+  "@additionalPropertiesForbiddenError": {
+    "description": "Entry dialog: the property name is not declared and additionalProperties is false.",
+    "placeholders": {
+      "key": {"type": "String"}
+    }
+  },
+
+  "invalidJsonError": "Invalid JSON format",
+  "@invalidJsonError": {
+    "description": "Raw JSON field: the entered text is not valid JSON."
+  },
+  "notAllowedByEnumError": "Not allowed by the enum",
+  "@notAllowedByEnumError": {
+    "description": "Enum array: the item value is not one of the allowed enum values."
+  },
+
+  "noFileSelectedHint": "No file selected",
+  "@noFileSelectedHint": {
+    "description": "Hint of the data-url file field when no file is selected."
+  },
+
+  "typeNameString": "String",
+  "@typeNameString": {
+    "description": "Display name of the string type in the 'Value type' selector and array add-item options."
+  },
+  "typeNameInt": "Int",
+  "@typeNameInt": {
+    "description": "Display name of the integer type."
+  },
+  "typeNameDouble": "Double",
+  "@typeNameDouble": {
+    "description": "Display name of the floating-point number type."
+  },
+  "typeNameBool": "Bool",
+  "@typeNameBool": {
+    "description": "Display name of the boolean type."
+  },
+  "typeNameArray": "Array",
+  "@typeNameArray": {
+    "description": "Display name of the array type."
+  },
+  "typeNameObject": "Object",
+  "@typeNameObject": {
+    "description": "Display name of the object type."
+  },
+  "typeNameNull": "Null",
+  "@typeNameNull": {
+    "description": "Display name of the null type."
+  },
+  "typeNameEnum": "Enum",
+  "@typeNameEnum": {
+    "description": "Display name of the enum pseudo-type."
+  },
+  "typeNameRaw": "Raw",
+  "@typeNameRaw": {
+    "description": "Display name of the raw-JSON pseudo-type."
+  },
+  "typeNameUnknown": "Unknown",
+  "@typeNameUnknown": {
+    "description": "Display name of an unknown type."
+  },
+
+  "expandCycleButtonLabel": "Expand cycle",
+  "@expandCycleButtonLabel": {
+    "description": "Button on a field collapsed by the cycle guard (its $ref repeats an ancestor's schema); pressing it reveals one more level of the recursive structure."
+  },
+  "cycleFieldHelperText": "Recursive reference",
+  "@cycleFieldHelperText": {
+    "description": "Helper text of a field collapsed by the cycle guard, explaining why it is not expanded."
+  }
+}

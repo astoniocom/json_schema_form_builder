@@ -1,0 +1,10 @@
+name: form_builder_workspace
+publish_to: none
+environment:
+  sdk: ^3.10.0
+workspace:
+  - packages/form_foundation
+  - packages/form_foundation/example
+  - packages/json_schema_form_builder
+  - packages/json_schema_form_builder/demo
+  - packages/json_schema_form_builder/example

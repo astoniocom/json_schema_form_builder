@@ -1,0 +1,45 @@
+name: json_schema_form_builder
+description: >-
+  Flutter forms generated from JSON Schema: typed field editors, live
+  validation, anyOf/oneOf variants, and an extensible handler registry.
+version: 0.1.0
+# The homepage is the live demo; the repository URL points at the package's
+# directory inside the monorepo (the /tree/ form pub.dev understands), so
+# relative links in the README resolve against the right subtree.
+homepage: https://astoniocom.github.io/json_schema_form_builder/
+repository: https://github.com/astoniocom/json_schema_form_builder/tree/main/packages/json_schema_form_builder
+resolution: workspace
+
+screenshots:
+  - description: A form generated live from the JSON Schema shown beside it.
+    path: screenshots/form_and_schema.webp
+
+environment:
+  sdk: ^3.10.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  collection: ^1.19.1
+  equatable: ^3.0.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  form_foundation: ^0.1.0
+  # The effective version is pinned exactly by flutter_localizations (it
+  # differs per Flutter SDK release); this constraint is required by pub.dev
+  # and must merely admit those pins, so it is as wide as the tested major.
+  intl: ^0.20.0
+  json_schema_builder: ^0.1.7
+  meta: ^1.15.0
+  rxdart: ^0.28.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  # Regenerate lib/src/l10n/generated from the ARB files (see l10n.yaml) on
+  # pub get / flutter gen-l10n. The generated code is committed.
+  generate: true

@@ -1,0 +1,49 @@
+{
+  "@@locale": "ru",
+
+  "resetValueTooltip": "Сбросить значение",
+  "setNullTooltip": "Установить null",
+  "valueNotSetLabel": "Не задано",
+
+  "valueAbsentLabel": "значение отсутствует",
+
+  "enumNullOptionLabel": "Значение не задано",
+  "enumNotSelectedLabel": "Не выбрано",
+  "selectOptionLabel": "Выберите опцию",
+  "variantLabel": "Вариант {number}",
+
+  "childrenHaveErrorsLabel": "Содержит ошибки в дочерних полях",
+  "listFallbackTitle": "Список",
+  "objectFallbackTitle": "Объект",
+  "itemsSummary": "{count, plural, one{{count} элемент} few{{count} элемента} many{{count} элементов} other{{count} элемента}}",
+  "valueFallbackLabel": "Значение",
+
+  "editDialogTitle": "Редактирование {fieldTitle}",
+  "addItemDialogTitle": "Добавить элемент",
+  "addEntryDialogTitle": "Добавить свойство",
+  "editEntryDialogTitle": "Изменить свойство",
+  "keyFieldLabel": "Ключ",
+  "valueTypeLabel": "Тип значения",
+  "keyEmptyError": "Ключ не может быть пустым",
+  "keyExistsError": "Ключ уже существует",
+  "additionalPropertiesForbiddenError": "Свойство \"{key}\" не описано в схеме, а дополнительные свойства запрещены",
+
+  "invalidJsonError": "Неверный формат JSON",
+  "notAllowedByEnumError": "Не входит в допустимые значения enum",
+
+  "noFileSelectedHint": "Файл не выбран",
+
+  "typeNameString": "String",
+  "typeNameInt": "Int",
+  "typeNameDouble": "Double",
+  "typeNameBool": "Bool",
+  "typeNameArray": "Array",
+  "typeNameObject": "Object",
+  "typeNameNull": "Null",
+  "typeNameEnum": "Enum",
+  "typeNameRaw": "Raw",
+  "typeNameUnknown": "Unknown",
+
+  "expandCycleButtonLabel": "Развернуть цикл",
+  "cycleFieldHelperText": "Рекурсивная ссылка"
+}
