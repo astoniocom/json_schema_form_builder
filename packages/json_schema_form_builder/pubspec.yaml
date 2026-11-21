@@ -2,7 +2,7 @@ name: json_schema_form_builder
 description: >-
   Flutter forms generated from JSON Schema: typed field editors, live
   validation, anyOf/oneOf variants, and an extensible handler registry.
-version: 0.1.0
+version: 0.1.1
 # The homepage is the live demo; the repository URL points at the package's
 # directory inside the monorepo (the /tree/ form pub.dev understands), so
 # relative links in the README resolve against the right subtree.

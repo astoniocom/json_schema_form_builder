@@ -23,6 +23,7 @@ class JsonEditor extends StatefulWidget {
     this.required = false,
     this.errorText,
     this.helperText,
+    this.invalidJsonMessage,
     this.expands = false,
     this.style,
     super.key,
@@ -36,9 +37,11 @@ class JsonEditor extends StatefulWidget {
   /// Called with `PresenceValue.absent()` when the input is cleared, `PresenceValue(null)`
   /// when the user types the JSON literal `null`, and `PresenceValue(x)` otherwise.
   ///
-  /// The second argument (parseError) is non-null (a localized message) when
-  /// the current text is not parseable JSON; the value then still holds the
-  /// last successfully parsed one. Null disables the editor.
+  /// The second argument (`parseError`) is non-null when the current text is
+  /// not parseable JSON; the value then still holds the last successfully
+  /// parsed one. That message comes from [invalidJsonMessage], or from the
+  /// localized invalid-JSON sentence when the callback is null. A null
+  /// [onChanged] disables the editor.
   final void Function(PresenceValue<dynamic> value, String? parseError)? onChanged;
 
   /// Field label; when null the editor renders without one (hosts like the
@@ -55,6 +58,11 @@ class JsonEditor extends StatefulWidget {
 
   /// Helper text under the editor, hidden while an error is shown.
   final String? helperText;
+
+  /// Builds the message for text that does not parse. When null, the
+  /// package's invalid JSON sentence is used. The parser's own message is
+  /// not shown.
+  final String Function(FormatException error)? invalidJsonMessage;
 
   /// When true the editor fills the available height (a full-pane JSON
   /// editor); when false it stays a compact 5-line inline field.
@@ -187,11 +195,13 @@ class _JsonEditorState extends State<JsonEditor> {
                 // The JSON is invalid: keep the last parsed value but report
                 // the parse error, so the caller (and any validity-gated UI)
                 // knows the editor content is not representable yet. The
-                // parser detail (position info) is appended when available.
-                final label = jsonFormLocalizationsOf(context).invalidJsonError;
-                final error = e is FormatException && e.message.isNotEmpty ? '$label: ${e.message}' : label;
+                // parser's message stays out of the text: it is English.
+                final invalidJson = jsonFormLocalizationsOf(context).invalidJsonError;
+                final error = e is FormatException
+                    ? widget.invalidJsonMessage?.call(e) ?? invalidJson
+                    : invalidJson;
                 onChangedLoc(_syncedValue, error);
-                if (_localError != null) return;
+                if (_localError == error) return;
                 setState(() {
                   _localError = error;
                 });

@@ -1,3 +1,11 @@
+## 0.1.1
+
+* Invalid JSON in `JsonEditor` is reported with the localized sentence
+  only. The parser's English `FormatException` text is no longer appended.
+* `JsonEditor.invalidJsonMessage` overrides that sentence. It receives the
+  `FormatException`; when the callback is null, the localized sentence is
+  used. The shown text updates when the built message changes.
+
 ## 0.1.0
 
 Initial release.
