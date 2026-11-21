@@ -12,10 +12,13 @@ List<Schema> computeSchemasForKey(ObjectSchema objectSchema, String key, Map<Reg
   final fromProperties = objectSchema.properties?[key];
 
   // 2. Matches via patternProperties
-  final fromPatterns = fieldNamePatterns.entries.where((mapEntry) => mapEntry.key.hasMatch(key)).map((e) => e.value).toList(growable: false);
+  final fromPatterns = fieldNamePatterns.entries
+      .where((mapEntry) => mapEntry.key.hasMatch(key))
+      .map((e) => e.value)
+      .toList(growable: false);
 
   final matched = [
-    if (fromProperties != null) fromProperties,
+    ?fromProperties,
     ...fromPatterns,
   ];
 
@@ -70,7 +73,9 @@ Future<List<ValidationError>> validateValue({
         final normalizedSchema = normalizeDraft07Tuples(schema);
         final (validationContext, schemaRegistry) = buildStandaloneValidationContext(itemSchema: normalizedSchema);
         try {
-          final result = await normalizedSchema.validateSchema(normalizedValue, [], validationContext, [normalizedSchema]);
+          final result = await normalizedSchema.validateSchema(normalizedValue, [], validationContext, [
+            normalizedSchema,
+          ]);
           return result.errors;
         } finally {
           schemaRegistry.dispose();

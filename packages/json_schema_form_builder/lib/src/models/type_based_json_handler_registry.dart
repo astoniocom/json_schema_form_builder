@@ -123,8 +123,8 @@ class TypeBasedJsonHandlerRegistry extends JsonHandlerRegistry {
   /// Looks up the handler by the exact runtimeType of the [field] state.
   ///
   /// Important: the match is strictly exact — a subtype of a registered type
-  /// or a different parameterization of a generic type (Foo<int> vs
-  /// Foo<dynamic>) will not be found and silently falls through to
+  /// or a different parameterization of a generic type (`Foo<int>` vs
+  /// `Foo<dynamic>`) will not be found and silently falls through to
   /// [unknownFieldHandler]. Register the concrete state types whose
   /// instances are actually created.
   @override

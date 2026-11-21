@@ -51,7 +51,7 @@ const double defaultMinInlineWidth = 300;
 /// Dart literals infer loose types — an untyped `{}` is
 /// `Map<dynamic, dynamic>` — while the json_schema_builder validator casts
 /// the data it walks to `Map<String, Object?>`, so a literal-built value
-/// crashed validation ("_ConstMap<dynamic, dynamic> is not a subtype ...").
+/// crashed validation ("`_ConstMap<dynamic, dynamic>` is not a subtype ...").
 /// Every validator entry point routes its data through this normalization;
 /// JSON-decoded data passes through unchanged in shape. Non-string map keys
 /// (malformed JSON data) are coerced with toString instead of crashing.

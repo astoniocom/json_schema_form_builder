@@ -98,13 +98,14 @@ class _EnumFieldState extends State<EnumField> {
   @override
   Widget build(BuildContext context) {
     final enumValues = widget.fieldState.enumValues;
-    final isReadOnly = (widget.fieldState.fieldAnnotations?.readOnly ?? false) || widget.onChanged == null || enumValues.isEmpty;
+    final isReadOnly =
+        (widget.fieldState.fieldAnnotations?.readOnly ?? false) || widget.onChanged == null || enumValues.isEmpty;
 
     final field = DropdownMenu<PresenceValue<dynamic>>(
       controller: _enumController,
       requestFocusOnTap: false,
       enableSearch: false,
-      searchCallback: (_, __) => null,
+      searchCallback: (_, _) => null,
       decorationBuilder: (context, controller) {
         return InputDecoration(
           label: FieldLabel(

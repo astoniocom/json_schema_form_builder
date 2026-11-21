@@ -374,7 +374,9 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
             ..hideCurrentSnackBar()
             ..showSnackBar(
               SnackBar(
-                content: Text(errorCount == 0 ? 'Validation passed: no errors' : 'Validation found $errorCount error(s)'),
+                content: Text(
+                  errorCount == 0 ? 'Validation passed: no errors' : 'Validation found $errorCount error(s)',
+                ),
               ),
             );
         }
@@ -453,7 +455,9 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
               icon: const Icon(Icons.format_align_left),
               // Formatting renders the last PARSED value; with an unparseable
               // draft or no value there is nothing safe to format.
-              onPressed: value.present && !hasParseError ? () => setState(() => _formatGeneration[title] = (_formatGeneration[title] ?? 0) + 1) : null,
+              onPressed: value.present && !hasParseError
+                  ? () => setState(() => _formatGeneration[title] = (_formatGeneration[title] ?? 0) + 1)
+                  : null,
             ),
           ),
         ],
@@ -478,7 +482,7 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
           Expanded(
             child: TabBarView(
               children: [
-                if (formTab != null) formTab,
+                ?formTab,
                 _buildEditorTab(
                   title: 'Schema',
                   value: _schemaMap == null ? const PresenceValue.absent() : PresenceValue(_schemaMap),
@@ -552,7 +556,8 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
                     children: [
                       Checkbox(
                         value: _ValidationMode.instant == _validationMode,
-                        onChanged: (value) => _setValidationMode(value == true ? _ValidationMode.instant : _ValidationMode.onDemand),
+                        onChanged: (value) =>
+                            _setValidationMode(value == true ? _ValidationMode.instant : _ValidationMode.onDemand),
                       ),
                       Text('Live validation', style: theme.textTheme.labelMedium),
                       const SizedBox(width: 8),

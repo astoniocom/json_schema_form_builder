@@ -201,13 +201,15 @@ void main() {
       expect(reorderedNewIndex, equals(1));
     });
 
-    testWidgets('6. The feedback row keeps its position relative to the pointer as it was at grab time', (tester) async {
+    testWidgets('6. The feedback row keeps its position relative to the pointer as it was at grab time', (
+      tester,
+    ) async {
       final items = [
         DummyFieldState('1', 'Element A'),
         DummyFieldState('2', 'Element B'),
       ];
 
-      await tester.pumpWidget(buildSubject(children: items, onReorder: (_, __) {}));
+      await tester.pumpWidget(buildSubject(children: items, onReorder: (_, _) {}));
 
       final dragHandles = find.byIcon(Icons.drag_handle);
       // The grab point is not the handle's center, to verify that an
@@ -318,7 +320,7 @@ void main() {
                   handlerRegistry: mockRegistry,
                   displayContextForField: (index, field) => 'Index: $index',
                   children: items,
-                  onReorder: (_, __) {},
+                  onReorder: (_, _) {},
                 ),
               ),
             ),
