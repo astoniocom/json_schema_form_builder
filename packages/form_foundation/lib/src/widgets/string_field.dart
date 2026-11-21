@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'common/examples_dropdown_mixin.dart';
 import 'common/text_value_sync_mixin.dart';

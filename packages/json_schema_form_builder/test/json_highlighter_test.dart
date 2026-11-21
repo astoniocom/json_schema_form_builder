@@ -1,9 +1,9 @@
 // The editor tabs feed highlightJson into an editable TextField, which
 // requires the spans to carry exactly the source text whatever the input is:
 // while typing, the text is malformed JSON most of the time.
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:json_schema_form_builder/json_schema_form_builder.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() {
   TextSpan highlight(String text, {Brightness brightness = Brightness.light}) =>

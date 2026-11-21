@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Builds [wideBuilder] when the incoming width constraint is at least
 /// [minWidth], otherwise [narrowBuilder].

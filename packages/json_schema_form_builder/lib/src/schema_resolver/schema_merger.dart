@@ -28,7 +28,7 @@ import 'resolvers/type.dart';
 class SchemaMerger implements SchemaMergeContext {
   /// Creates a merger with an explicit strategy chain; most callers use
   /// [SchemaMerger.withDefaults].
-  const SchemaMerger({required List<SchemaKeyMergeStrategy> strategies}) : _strategies = strategies;
+  const SchemaMerger({required this._strategies});
 
   /// Builds a merger pre-loaded with all built-in strategies.
   ///

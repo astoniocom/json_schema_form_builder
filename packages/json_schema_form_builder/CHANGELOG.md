@@ -1,3 +1,13 @@
+## 0.2.0
+
+* Requires Flutter >=3.47.0 and Dart >=3.13.0.
+* Material widgets are imported from `package:material_ui/material_ui.dart`.
+  `package:flutter/material.dart` is deprecated, and the Material types in
+  the public API now come from `material_ui`.
+* `JsonFormLocalizations.localizationsDelegates` registers the
+  `material_ui` and `cupertino_ui` localizations delegates.
+* Depends on `form_foundation` ^0.2.0.
+
 ## 0.1.1
 
 * Invalid JSON in `JsonEditor` is reported with the localized sentence

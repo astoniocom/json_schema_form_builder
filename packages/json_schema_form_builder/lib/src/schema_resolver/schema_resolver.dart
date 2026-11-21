@@ -43,8 +43,8 @@
 ///    network, which fails offline and on the web.
 library;
 
-import 'package:flutter/material.dart';
 import 'package:json_schema_builder/json_schema_builder.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../utils/utils.dart';
 import 'schema_merger.dart';

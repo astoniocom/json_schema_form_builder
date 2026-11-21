@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:json_schema_form_builder/json_schema_form_builder.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Tests of the turnkey [JsonSchemaForm] widget: the schema renders without
 /// any host-side pipeline, edits flow out through onChanged, and the reported

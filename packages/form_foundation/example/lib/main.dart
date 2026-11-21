@@ -2,8 +2,8 @@
 // validation, and the layout, and composes the form from the package's
 // primitives — typed field widgets, a group frame, removable rows, an add
 // button — all themed through FormTheme.
-import 'package:flutter/material.dart';
 import 'package:form_foundation/form_foundation.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() {
   runApp(const ExampleApp());

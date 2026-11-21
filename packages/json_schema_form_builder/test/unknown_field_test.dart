@@ -1,11 +1,11 @@
 // UnknownField: the read-only marker of a field no handler accepts — the
 // value as plain text behind a question-mark icon, never an editor.
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:json_schema_form_builder/json_schema_form_builder.dart';
 // The widget itself is internal (the facade exports the handler and the
 // state); tests may reach into src.
 import 'package:json_schema_form_builder/src/handlers/unknown/unknown_field.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() {
   UnknownFieldState state({

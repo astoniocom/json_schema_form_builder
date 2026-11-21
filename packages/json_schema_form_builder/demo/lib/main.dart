@@ -3,9 +3,9 @@ import 'dart:async';
 import 'package:control_style/control_style.dart';
 import 'package:file_selector/file_selector.dart';
 import 'package:flutter/foundation.dart' show defaultTargetPlatform;
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show SystemNavigator;
 import 'package:json_schema_form_builder/json_schema_form_builder.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'models.dart';

@@ -1,9 +1,9 @@
 // The framed EditorGroup must always keep a visible frame: default outline
 // without any theming, the app's inputDecorationTheme border when configured,
 // FormThemeData.groupBorder above both.
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:form_foundation/form_foundation.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() {
   Widget wrap(Widget child, {ThemeData? theme, FormThemeData? formTheme}) {

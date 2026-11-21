@@ -3,8 +3,8 @@
 // gated by the validation result.
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
 import 'package:json_schema_form_builder/json_schema_form_builder.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// The JSON Schema the form is generated from.
 final Schema _personSchema = Schema.fromMap({

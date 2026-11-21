@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// The minimal contract of a field renderer: given an immutable field state
 /// [FS], build the editor widget. Schema-agnostic — json_schema_form_builder

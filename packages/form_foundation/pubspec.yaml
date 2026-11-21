@@ -2,7 +2,7 @@ name: form_foundation
 description: >-
   Schema-agnostic building blocks for form UIs: themable field widgets,
   editor groups, labels, and error panels shared by form generators.
-version: 0.1.0
+version: 0.2.0
 # The repository URL points at the package's directory inside the monorepo
 # (the /tree/ form pub.dev understands), so relative links in the README
 # resolve against the right subtree.
@@ -16,13 +16,14 @@ screenshots:
     path: screenshots/contact_form.webp
 
 environment:
-  sdk: ^3.10.0
-  flutter: ">=1.17.0"
+  sdk: ^3.13.0
+  flutter: ">=3.47.0"
 
 dependencies:
   collection: ^1.19.1
   flutter:
     sdk: flutter
+  material_ui: ^1.5.0
 
 dev_dependencies:
   flutter_lints: ^6.0.0

@@ -2,9 +2,9 @@
 // a sample whose schema fails to parse, whose form data crashes the pipeline,
 // or whose widgets throw during layout is a broken showcase entry.
 import 'package:demo/sample_db.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:json_schema_form_builder/json_schema_form_builder.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() {
   final registry = standardJsonHandlerRegistry();

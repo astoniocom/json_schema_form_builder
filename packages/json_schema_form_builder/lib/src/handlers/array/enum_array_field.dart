@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:form_foundation/form_foundation.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../../../json_schema_form_builder.dart';
 

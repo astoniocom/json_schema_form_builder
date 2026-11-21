@@ -6,13 +6,13 @@
 // The throwing schema used throughout: `pattern: '['` makes the validator
 // throw a FormatException (unterminated character class), which is exactly
 // the "validator rejected the schema" situation reported by users.
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:json_schema_builder/json_schema_builder.dart';
 import 'package:json_schema_form_builder/json_schema_form_builder.dart';
 import 'package:json_schema_form_builder/src/handlers/object/object_entry_edit_dialog.dart';
 import 'package:json_schema_form_builder/src/models/schema_validation_mode.dart' show validatorRejectedSchemaErrors;
 import 'package:json_schema_form_builder/src/widgets/field_editor_screen.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'helpers.dart';
 

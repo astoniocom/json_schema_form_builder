@@ -45,7 +45,6 @@ linter:
     avoid_multiple_declarations_per_line: true
     # avoid_positional_boolean_parameters: true
     avoid_print: true
-    avoid_private_typedef_functions: true
     avoid_redundant_argument_values: true
     avoid_relative_lib_imports: true
     avoid_renaming_method_parameters: true
@@ -187,7 +186,6 @@ linter:
     type_init_formals: true
     type_literal_in_constant_pattern: true
     unawaited_futures: true
-    unnecessary_await_in_return: true
     unnecessary_brace_in_string_interps: true
     unnecessary_breaks: true
     unnecessary_const: true

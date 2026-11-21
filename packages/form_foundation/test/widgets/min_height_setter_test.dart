@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 // Internal helper, deliberately not exported by the facade.
 import 'package:form_foundation/src/widgets/min_height_setter.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() {
   group('MinHeightSetter', () {

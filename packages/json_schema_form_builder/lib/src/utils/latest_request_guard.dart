@@ -7,8 +7,8 @@
 /// survive. This class owns the bookkeeping: results of superseded runs are
 /// discarded instead of overwriting newer state.
 class LatestRequestGuard {
-  /// Creates a guard; [isAlive] adds a liveness check (e.g. `() => mounted`).
-  LatestRequestGuard({bool Function()? isAlive}) : _isAlive = isAlive;
+  /// Creates a guard; [_isAlive] adds a liveness check (e.g. `() => mounted`).
+  LatestRequestGuard({this._isAlive});
 
   /// Extra liveness check consulted before applying a result,
   /// e.g. `() => mounted` for a State.

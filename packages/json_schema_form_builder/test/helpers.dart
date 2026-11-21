@@ -2,8 +2,8 @@
 /// building the way production does it, and the array-form widget harness.
 library;
 
-import 'package:flutter/material.dart';
 import 'package:json_schema_form_builder/json_schema_form_builder.dart';
+import 'package:material_ui/material_ui.dart';
 
 JsonHandlerRegistry buildRegistry({
   ObjectFieldDisplayMode displayMode = ObjectFieldDisplayMode.all,

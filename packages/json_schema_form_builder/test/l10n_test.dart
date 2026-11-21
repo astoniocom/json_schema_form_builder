@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:json_schema_form_builder/json_schema_form_builder.dart';
 import 'package:json_schema_form_builder/src/handlers/null/null_field.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// A language the library does not bundle, the way a package consumer adds
 /// one: extend the English translation, override what is needed.

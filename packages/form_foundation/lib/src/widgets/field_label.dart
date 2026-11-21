@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// The label of a form field: the title text (truncated with an ellipsis
 /// when it does not fit) plus the required asterisk, which is never
